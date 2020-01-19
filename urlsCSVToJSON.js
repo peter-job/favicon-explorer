@@ -1,7 +1,7 @@
 const bluebird = require("bluebird");
 const fs = bluebird.promisifyAll(require("fs"));
 
-fs.readFileAsync(`${process.cwd()}/majestic_million_reduced.csv`, "utf8")
+fs.readFileAsync(`${process.cwd()}/urls/mm_reduced.csv`, "utf8")
   .then(txt => {
     const rows = txt.split("\n");
     return rows.map(row => {
@@ -11,7 +11,7 @@ fs.readFileAsync(`${process.cwd()}/majestic_million_reduced.csv`, "utf8")
   })
   .then(urls => {
     fs.writeFileAsync(
-      `${process.cwd()}/urls.json`,
+      `${process.cwd()}/urls/urls.json`,
       JSON.stringify({ urls }, null, 2)
     );
   })

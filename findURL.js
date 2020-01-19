@@ -3,7 +3,7 @@ const fs = bluebird.promisifyAll(require("fs"));
 const safeSite = require("./safeSite");
 
 const findURL = () => {
-  return fs.readFileAsync(`${__dirname}/urls.json`, "utf8").then(txt => {
+  return fs.readFileAsync(`${__dirname}/urls/urls.json`, "utf8").then(txt => {
     console.log("readfile");
     const { urls } = JSON.parse(txt);
     console.log("parsed to json");
