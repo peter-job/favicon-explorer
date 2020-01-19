@@ -1,0 +1,16 @@
+{
+  "name": "hobbit_txt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generator.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.3",
+    "icojs": "^0.12.2",
+    "twit": "^2.2.11"
+  }
+}
