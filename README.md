@@ -1,6 +1,6 @@
-# other_favicons
+Favicon Explorer
 
-using favicons from the bottom 500,000 of alexa's top 1 million websites [csv](http://s3.amazonaws.com/alexa-static/top-1m.csv.zip)
+Collecting favicons from alexa's top 1 million websites [csv](http://s3.amazonaws.com/alexa-static/top-1m.csv.zip)
 
 google image search site:domain.com safe=active
 
